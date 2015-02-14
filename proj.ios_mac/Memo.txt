@@ -1,0 +1,27 @@
+旧記述
+
+// Scale9Sprite
+#include "extensions/cocos-ext.h"
+
+// Scale9Sprite
+USING_NS_CC_EXT;
+
+// Scale9Sprite
+using namespace extension;
+
+
+Rect spriteRect = Rect(0, 0, 80, 80);
+Rect capInsents = Rect(12, 12, 56, 56);
+Scale9Sprite* backgroundSprite = Scale9Sprite::create("button9.png", spriteRect);
+backgroundSprite->setPosition(Point(winSize.width /2 ,winSize.height/4));
+this->addChild(backgroundSprite, 1);
+
+Scale9Sprite* hoge = Scale9Sprite::create("button9.png");
+hoge->setPosition(Point(winSize.width / 2, winSize.height / 4));
+hoge->setContentSize(Size(400, 150));
+this->addChild(hoge, 1);
+
+Scale9Sprite* nineGirl = Scale9Sprite::create("button9.png");
+nineGirl->setContentSize(Size(300,100));
+nineGirl->setPosition(ccp(200,200));
+this->addChild(nineGirl);
